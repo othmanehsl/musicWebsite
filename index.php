@@ -100,7 +100,7 @@ require ('header.php');
  <h1>
    Welcome!
  </h1><br><br><br><br>
- <p style="font-size: 44px; margin-left:32px;"><u>The Best Of:</u></p>
+ <p style="font-size: 44px; margin-left:32px; text-decoration: none;"><u>The Best Of:</u></p>
  <div class="contenu">
   <a href="pages/rap.php" class="music">
     <img src="images/rap.jpg" height="532px" alt="">
