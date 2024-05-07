@@ -1,0 +1,97 @@
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #0a0a0a;
+  color: white;
+  font-family: 'Poppins',sans-serif;
+}
+.dataTables_wrapper .dataTables_length select {
+  color: rgb(255, 255, 255);
+  background-color: #000000;
+}
+.dataTables_wrapper .dataTables_filter input {
+  color: white;
+}
+header {
+  display: flex;
+  align-items: center;
+}
+nav {
+  width: 980px;
+  display: flex; 
+  justify-content: flex-end; 
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+li {
+  position: relative;
+  padding: 0 20px;
+  height: 100%;
+  display: flex;
+}
+
+a {
+  z-index: 1;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 5px;
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  height: 33.33%;
+  width: 0;
+  background-color: #0D7CFF;
+  right: 0;
+  z-index: 0;
+  top: 33.33%;
+  transition: all 0.5s;
+}
+li::after {
+  content: "";
+  position: absolute;
+  height: 33.33%;
+  width: 0;
+  background-color: #0D7CFF;
+  left: 0;
+  z-index: 0;
+  bottom: 0;
+  transition: all 0.5s;
+}
+a::before {
+  position: absolute;
+  content: "";
+  height: 33.33%;
+  width: 0;
+  background-color: #0D7CFF;
+  bottom: 66.66%;
+  left: 0;
+  transition: all 0.5s;
+}
+
+li:hover:before,
+li:hover::after,
+li:hover a::before{
+   width: 100%;
+}
+
+
+
+main {
+  width: 1080px;
+  margin: 0 auto;
+}
